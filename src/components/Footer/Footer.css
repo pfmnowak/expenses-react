@@ -1,0 +1,45 @@
+.footer {
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+}
+
+.footer__link {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fb000d;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.footer__link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid #fb000d;
+  transition: width 0.3s ease;
+}
+
+.footer__link:hover:after {
+  left: 0;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__copyright {
+  color: white;
+  border-top: 1px solid #4b4b4b;
+  padding-top: 2rem;
+  flex: 0 0 80%;
+  line-height: 200%;
+}
